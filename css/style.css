@@ -13,7 +13,6 @@ body{
 }
 /* header */
 header{
-    background-image: url("/banner.jpg");
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
