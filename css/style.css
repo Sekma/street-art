@@ -200,7 +200,7 @@ body{
         opacity: 0.5;
     }
 
-@media (max-width: 992px){
+@media (max-width: 991px){
     nav .logo{
         width: 25%;
         margin: 0 10px;
