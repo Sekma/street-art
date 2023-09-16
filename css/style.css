@@ -73,9 +73,9 @@ body{
         line-height: 50px;
     } 
     .barre{
-        width: 0px;
+        width: 3px;
         height: 250px;
-        border: 2px solid rgb(67, 67, 67);
+        background-color: rgb(67, 67, 67);
     }
     .section1 img{
         width: 60%;
@@ -97,7 +97,7 @@ body{
     }
     .section2 div{
         width: 40%;
-        margin: 30px;
+        margin: 30px 10px;
         text-align: center;
     }
     .section2 img{
@@ -158,7 +158,7 @@ body{
         text-align: center;
         opacity: 0.8;
     }
-    footer .footerPart1{
+    .footerPart1{
         height: 200px;
         padding: 50px;
         background-color: rgb(194, 0, 81);
@@ -200,6 +200,8 @@ body{
         opacity: 0.5;
     }
 
+/* pour tablette */
+
 @media (max-width: 991px){
     nav .logo{
         width: 25%;
@@ -209,7 +211,7 @@ body{
         gap: 25px;
         padding: 20px 10px;
     }
-/* section 1 */
+/* pour tablette section 1 */
     .description{
         width: 83%;
         margin: 10px auto 0;
@@ -224,7 +226,7 @@ body{
     .section1 img{
         width: 95%;
     }
-/* section 2 */
+/* pour tablette section 2 */
     .section2{    
         flex-direction: column;
         width: 95%;
@@ -243,7 +245,11 @@ body{
     .section2 h3{
         margin-bottom: 10px;
     }
-/* section 3 */
+    .section2 p{
+        width:70%;
+        margin: auto;
+    }
+/* pour tablette section 3 */
     .section3{
         flex-direction: column;
         width: 95%;
@@ -264,7 +270,7 @@ body{
         height: 30px;
         margin: 25px auto 10px ;
     }
-/* footer */
+/* pour tablette footer */
     footer{
         font-size: small;
     }
@@ -296,4 +302,70 @@ body{
         margin: 30px 8px;
     }
   
+}
+
+/* pour mobile */
+
+@media (max-width: 767px){
+    nav{
+        display: block;
+    }
+    nav .logo{
+        width: 30%;
+        margin: 0 10px;
+    }
+    ul{
+        justify-content: space-around;
+        margin: 30px 0;
+        font-size: small;
+    }
+/* pour mobile section 1 */
+    .section1 img{
+        border-radius: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .description{
+        border-radius: 0;
+        margin: 0;
+        width: 88%;
+    }
+    .barre{
+        display: none;
+    }
+/* pour mobile section 2 */
+    .section2{
+        border-radius: 0;
+        width: 100%;
+    }
+/* pour mobile section 3 */
+    .section3{
+        width: 100%;
+        margin: 0;
+        gap: 10px;
+    }
+    .section3 img, .section3 figcaption{
+        border-radius: 0;
+    } 
+    .section3 button{
+        width: 90%;
+    }
+/* pour mobile footer */
+    footer .footerPart1{
+        height: 180px;
+    }
+    .sendEmail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .sendEmail input{
+        width: 90%;
+        height: 40px;
+    }
+    .sendEmail button{
+        width: 92%;
+        height: 40px;
+    }
 }
