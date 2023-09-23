@@ -198,6 +198,7 @@ body{
     }
     footer span{
         opacity: 0.5;
+        font-size: small;
     }
 
 /* pour tablette */
