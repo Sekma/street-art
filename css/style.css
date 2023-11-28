@@ -41,6 +41,9 @@ body{
         color: white;
         font-weight: 600;
     }
+    a:hover{
+        border-bottom: 2px solid white;
+    }
     header h1{
         text-align: center;
         margin-top: 5%;
@@ -52,6 +55,10 @@ body{
         }
 
 /* section 1 */
+main{
+    max-width: 960px;
+    margin: auto;
+}
     .section1{
         text-align: center;
     }
